@@ -1,12 +1,23 @@
-> ![MikroE](http://www.mikroe.com/img/designs/beta/logo_small.png)
-> #[RF Meter click](http://http://www.mikroe.com/click/rf-meter/)
-> ##By [MikroElektronika](http://www.mikroe.com)
+![MikroE](http://www.mikroe.com/img/designs/beta/logo_small.png)
+
+![RF_Meter_click](http://www.mikroe.com/img/news/2016/01/rf_meter_click_banner_news.png)
+
 ---
 
-## Installation
-Use the package manager to install the library for your architecture.
+###General Description
+RF Meter click is a radio frequency power measurement device covering a frequency span from 1 MHz to 8 GHz over a 60 dB range (approximately). It enables monitoring and measuring frequency levels to ensure proper functioning and leak detection. An external antenna acquires the signal, which is then processed by the AD8318 logarithmic detector. The resulting voltage is fed into an MCP3201 ADC. For communicating with the target board MCU, the mikroBUS™ SPI interface is used (CS, SCK, MISO pins), with additional TEMP OUT pin.
+
+---
 
 ###Example
+
+#### Configuration
+* MCU:             STM32F107VC
+* Dev.Board:       EasyMx Pro v7
+* Oscillator:      72 Mhz internal
+* Ext. Modules:    SHT Click
+* SW:              MikroC PRO for ARM 4.7.4
+
 ```
 #include "rf_meter_hw.h"
 #include "resources.h"
